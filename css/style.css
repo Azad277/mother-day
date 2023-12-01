@@ -1,0 +1,90 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/1645831807_1-abrakadabra-fun-p-otkritki-s-dnem-rozhdeniya-mama-tsveti-tyu-1.jpg);
+    background-repeat: no-repeat;
+    border-bottom: right bottom;
+    background-size: cover;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fade 5s forwards;
+    background-color: white;
+}
+
+.img {
+    animation: translate 2s forwards;
+}
+
+.content {
+    color: brown;
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    animation: text-fade 5s forwards, text-color 3s infinite alternate;
+}
+
+.poem {
+    font-size: 30px;
+    animation: text-fade 5s forwards;
+}
+
+
+@keyframes fade {
+    0% {
+        background-color: white;
+    }
+
+    100% {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+@keyframes text-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-color {
+    0% {
+        color: brown;
+    }
+
+    50% {
+        color: rgb(255, 0, 0);
+    }
+
+    100% {
+        color: rgb(255, 140, 0);
+    }
+}
+
+@keyframes translate {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
